@@ -36,12 +36,12 @@ DAFF는 수원다산중 학생들이 만든 영상/단편영화 등을 공개하
 					</header>
 
 					<script>
-						var homef = function(){sessionStorage.clear();sessionStorage.setItem("page", "home");$('#main2').show();$('#generic').hide();$('#qna').hide();$('#sunseo').hide();$('.non_active').removeClass('active');$('.non2_active').removeClass('active');$('.non3_active').removeClass('active');$('.non4_active').removeClass('active');$('.yes_active').addClass('active');$('#generic2').hide();}
-						var wrapperf = function(){sessionStorage.clear();sessionStorage.setItem("page", "wrapper");$('#main2').show();$('#generic').hide();$('#qna').hide();$('#sunseo').hide();$('.non_active').addClass('active');$('.non2_active').removeClass('active');$('.non3_active').removeClass('active');$('.non4_active').removeClass('active');$('.yes_active').removeClass('active');$('#generic2').hide();}
-						var genericf = function(){sessionStorage.clear();sessionStorage.setItem("page", "generic");$('#main2').hide();$('#generic').show();$('#generic2').hide()$('#qna').hide();$('#sunseo').hide();$('.non_active').removeClass('active');$('.non2_active').addClass('active');$('.non3_active').removeClass('active');$('.non4_active').removeClass('active');$('.yes_active').removeClass('active');}
-var generic2f = function(){sessionStorage.clear();sessionStorage.setItem("page", "generic2");$('#main2').hide();$('#generic').hide();$('#generic2').show();$('#qna').hide();$('#sunseo').hide();$('.non_active').removeClass('active');$('.non2_active').addClass('active');$('.non3_active').removeClass('active');$('.non4_active').removeClass('active');$('.yes_active').removeClass('active');}
-						var sunseof = function(){sessionStorage.clear();sessionStorage.setItem("page", "sunseo");$('#main2').hide();$('#generic').hide();$('#qna').hide();$('#sunseo').show();$('.non_active').removeClass('active');$('.non2_active').removeClass('active');$('.non3_active').addClass('active');$('.non4_active').removeClass('active');$('.yes_active').removeClass('active');$('#generic2').hide();}
-						var qnaf = function(){sessionStorage.clear();sessionStorage.setItem("page", "qna");$('#main2').hide();$('#generic').hide();$('#qna').show();$('#sunseo').hide();$('.non_active').removeClass('active');$('.non2_active').removeClass('active');$('.non3_active').removeClass('active');$('.non4_active').addClass('active');$('.yes_active').removeClass('active');$('#generic2').hide();}
+						var homef = function(){sessionStorage.clear();sessionStorage.setItem("page", "home");$('#main2').show();$('#generic').hide();$('#qna').hide();$('#sunseo').hide();$('.non_active').removeClass('active');$('.non2_active').removeClass('active');$('.non3_active').removeClass('active');$('.non4_active').removeClass('active');$('.non5_active').removeClass('active');$('.yes_active').addClass('active');$('#generic2').hide();}
+						var wrapperf = function(){sessionStorage.clear();sessionStorage.setItem("page", "wrapper");$('#main2').show();$('#generic').hide();$('#qna').hide();$('#sunseo').hide();$('.non_active').addClass('active');$('.non2_active').removeClass('active');$('.non3_active').removeClass('active');$('.non4_active').removeClass('active');$('.non5_active').removeClass('active');$('.yes_active').removeClass('active');$('#generic2').hide();}
+						var genericf = function(){sessionStorage.clear();sessionStorage.setItem("page", "generic");$('#main2').hide();$('#generic').show();$('#generic2').hide()$('#qna').hide();$('#sunseo').hide();$('.non_active').removeClass('active');$('.non2_active').addClass('active');$('.non3_active').removeClass('active');$('.non4_active').removeClass('active');$('.non5_active').removeClass('active');$('.yes_active').removeClass('active');}
+						var genericff = function(){sessionStorage.clear();sessionStorage.setItem("page", "generic2");$('#main2').hide();$('#generic').hide();$('#generic2').show();$('#qna').hide();$('#sunseo').hide();$('.non_active').removeClass('active');$('.non2_active').removeClass('active');$('.non3_active').removeClass('active');$('.non4_active').removeClass('active');$('.non5_active').addClass('active');$('.yes_active').removeClass('active');}
+						var sunseof = function(){sessionStorage.clear();sessionStorage.setItem("page", "sunseo");$('#main2').hide();$('#generic').hide();$('#qna').hide();$('#sunseo').show();$('.non_active').removeClass('active');$('.non2_active').removeClass('active');$('.non3_active').addClass('active');$('.non4_active').removeClass('active');$('.non5_active').removeClass('active');$('.yes_active').removeClass('active');$('#generic2').hide();}
+						var qnaf = function(){sessionStorage.clear();sessionStorage.setItem("page", "qna");$('#main2').hide();$('#generic').hide();$('#qna').show();$('#sunseo').hide();$('.non_active').removeClass('active');$('.non2_active').removeClass('active');$('.non3_active').removeClass('active');$('.non4_active').addClass('active');$('.non5_active').removeClass('active');$('.yes_active').removeClass('active');$('#generic2').hide();}
 					</script>
 				<!-- Nav -->
 					<nav id="nav" class="hidden">
@@ -50,7 +50,7 @@ var generic2f = function(){sessionStorage.clear();sessionStorage.setItem("page",
 							<li class="non_active"><a href="#header" class="scrolly" onclick="javascript:wrapperf();">DAFF 방송 일자는?</a></li>
 							<li class="non4_active"><a href="#header" class="scrolly" onclick="javascript:qnaf();">DAFF 자주 묻는 질문</a></li>
 							<li class="non3_active"><a href="#header" class="scrolly" onclick="javascript:sunseof();">DAFF 진행 순서</a></li>
-							<li class="non2_active"><a href="#header" class="scrolly" onclick="javascript:generic2f();">DAFF 방송 보기</a></li> -->
+							<li class="non5_active"><a href="#header" class="scrolly" onclick="javascript:genericff();">DAFF 방송 다시보기</a></li>
 							<li class="non2_active"><a href="#header" class="scrolly" onclick="javascript:genericf();">DAFF <!--방송 보기--> 시상 결과</a></li>
 							<!-- <li><a href="elements.html"></a></li> -->
 						</ul>
@@ -70,8 +70,9 @@ var generic2f = function(){sessionStorage.clear();sessionStorage.setItem("page",
 								<header class="major">
 									<span class="date">July 15, 2021</span>
 									<h2><a href="#">2021 Dasan Artist Film Festival</a></h2>
-									<p>2021 DAFF는 7월 15일, 1~3교시(9시 10분 ~ 11시 45분)에 컨텐츠메이커스 유튜브를 통해 방송됩니다.<br />
+									<p>2021 DAFF는 7월 15일, 1~3교시(9시 10분 ~ 11시 45분)에 컨텐츠메이커스 유튜브를 통해 방송됩니다.<br /><br />
 										<a href="javascript:;" onclick="javascript:genericf();"><!--방송-->시상 결과 보러 가기</a>
+										<a href="javascript:;" onclick="javascript:genericff();">방송 다시 보기</a>
 									</p>
 								</header>
 								<style>
